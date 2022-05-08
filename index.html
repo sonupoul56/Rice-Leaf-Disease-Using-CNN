@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Rice Leaf Disease Detection Using CNN</title>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ylwvkjQekUu1gopSOye_ZLU4Pi3WEAczQVQepaR6DvwK527MK-wmS4w-Igijv3aXa_fFM1xnl2wfApzfjRLOdhzoxaQGqY2DtrNP-dZpdnW5anF6l64hdxm2Tj5y8faHtm96v-jAPA2qKwNTMX95vaCkSO1e36BDcX5VL3HDUjUQZW4Uw8mCqaInbpgm6S14tty72iktvIJrofNbTyV7bLQEEF-yhiMgyShUUWPWdz_on3x4oKjSq0BzH3JYtKZ3JyVfZNsyzISR-N8cpyJs9t0o-JX3wSbOLORPtCeaP3vdBbaPEspRJzrbvlg73yoYjOvY03u4WpZvx6aMw7oxPSeqUzCfY3ghPYQuFULJbH_f1gDkIyZwP8QcKgKFTu0L_EiyX58gbaEiID_XQ9DP94MWVITSPdvE3OZPdTvC1zhR2ZUqYa9tTzROFqgiOZvpGT8dIOP4a6jqWR7AjtnCkEv-vQaTn_x90VpeMME5Vb55EtebV1Lt33f8EAMo8vAMCzolDs4dCkA5D7aL9UHuLPcxutlMHswbb4f_ihabYAlb1HzP6PE7YfzNRneDxDeK-fzc9eOlAiZmmBbqjjtC1P4MttV4zYYoJqU0TBEc-xeJZWXaGTu0c-rksM-CIVP-_eQdPoTyCwGExqpXzFMX8Mj2nsrRF85MU5--O-Hn30u1AxcNMUpkXHJs0tptV8ZYupL966mFpaHJObOP2nNZMxLtbZgjbBXqv5oyHe5LmRQ-PY6MNVSVFbtqUbLbWhJKI4qWzQDYk5Ky4x0Zb6KXbtgCH0ppQM_udx3lqnXqzZIorBMX_gSy4SvMBZa7RD6nmLQwHK9QkUtO0TelwhTX7z0-djOQoXCPuwSGxwgLwj0gq2ZEkfD-_8pWbNdKfYNv1956PFRAoENCl_X-4nYCCCrr02KfqMWQplQltyPlJ7l6MFLtAuv-qcHhjsHj6glvfmpyXSGMiN9BwDgwLtzoBiTmWnEmHzfphIlTCpQTyXqPjQCXSeS11i_78n25riWl-OUIoieS6NuKe1Qm4T48Ky0mqTm4o2nnCU__7MTmI7se8buQNnKyFiAtsniT29XYkDXa_Y-r4cu8T0nK34kwdQLsPGQIKYI-SSbG1DMf_j_Rbc64R9c_3u7lboASC2UnjRGv8op8KrOUSRh1LidN0t8lgYIj8nNxA-JOwvTtW8GXuB6RvMbsb8cyJOwpcH3t0Ah6h4XBRJ5euTJKumoA3h2PVOw8hmK3C9blCrPOdU7IG7wBY6o9mMe4a5ET2TWSMlRJuKFIaREox2E5cijj2vtT8btBUWOjNPhbGEZvq-ITcEHitUr1LPZpZinBdi-GMt0NTyOo_ZiOAAvqJNFwZ08pxgMV2f38IFaUjSdQYGhQgK4Lfr6VJZGcZbfMpY9a" charset="UTF-8"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='upload.js') }}"></script>
+</head>
+<body>
+<div class="w3-blue container w3-center w3-animate-left w3-border w3-border-black w3-hover-white">
+    <h1><b>Rice Leaf Disease Using CNN</b></h1>
+</div>
+<div class="w3-dropdown-hover w3-animate-left"><p id="first"><i class="material-icons fa fa-user w3-xxlarge w3-hover-black w3-padding-large"></i></p>
+  <div class="w3-dropdown-content w3-card-4 w3-light-grey" style="width:200px">
+  <a href="https://media-exp1.licdn.com/dms/image/C4D03AQGNnOAQvaXing/profile-displayphoto-shrink_800_800/0/1634656344074?e=1652918400&v=beta&t=bgLCfOMgQEmS_bQ0vgQZgZG3Pl2G0cxIPNpbXT-T5cc">
+    <img id="second" src="https://media-exp1.licdn.com/dms/image/C4D03AQGNnOAQvaXing/profile-displayphoto-shrink_800_800/0/1634656344074?e=1652918400&v=beta&t=bgLCfOMgQEmS_bQ0vgQZgZG3Pl2G0cxIPNpbXT-T5cc" alt="Profile" style="width:100%" class="w3-hover-opacity">
+    </a>
+    <div class="w3-container">
+      <p>Hello, Welcome to my project!</p>
+      <p>My name is <b>Someshwar Paul</b>.</p>
+      <p><a href="mailto:sonupoul56@gmail.com" ><i class="fa fa-envelope w3-hover-opacity"></i></a><a href="www.linkedin.com/in/someshwar-paul-0422b216b"><i class="fa fa-linkedin w3-hover-opacity w3-right"></i></a></p>
+    </div>
+  </div>
+</div>
+<form action="/predict" method="post" enctype="multipart/form-data">
+<div class="w3-center w3-padding-48 w3-animate-left ">
+     <input type="file" class="w3-btn w3-red" id="myFile" name="file">
+</div>
+<div class="w3-center">
+    <button type="submit" class="w3-button w3-round-large w3-xlarge w3-hover-blue w3-animate-left"><b>Predict</b></button>
+</div>
+</form>
+<div id="third" class="w3-animate-left"><span class="w3-tag w3-xlarge w3-purple" style="transform:rotate(-5deg)">T</span>
+<span class="w3-tag w3-xlarge" style="transform:rotate(-5deg)">H</span>
+<span class="w3-tag w3-xlarge w3-yellow" style="transform:rotate(-5deg)">A</span>
+<span class="w3-tag w3-xlarge" style="transform:rotate(-5deg)">N</span>
+<span class="w3-tag w3-spin w3-xlarge w3-blue" style="transform:rotate(-5deg)">K</span>
+<span class="w3-tag w3-xlarge" style="transform:rotate(-5deg)">Y</span>
+<span class="w3-tag w3-xlarge w3-green" style="transform:rotate(-5deg)">O</span>
+<span class="w3-tag w3-xlarge" style="transform:rotate(-5deg)">U</span>
+<span class="w3-tag w3-xlarge w3-red" style="transform:rotate(-5deg)">!</span>
+</div>
+</body>
+</html>
+
+
+<style>
+h1 {
+text-align: center;
+padding: 16px 16px;
+}
+#first {
+text-align: center;
+padding: 0px 16px;
+}
+#second {
+text-align: center;
+padding: 32px 32px;
+}
+#third {
+text-align: center;
+padding: 100px 0px;
+}
+</style>
